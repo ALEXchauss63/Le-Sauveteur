@@ -30,4 +30,8 @@ app.use((req, res, next) => {
   next();
 });
 
+const urgenceRoutes = require("./Routes/rUrgence");
+
+app.use("/api/urgence", urgenceRoutes);
+
 module.exports = app;
