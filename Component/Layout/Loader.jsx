@@ -1,4 +1,4 @@
-import loaderStyle from "../Style/loaderStyle.style";
+import loaderStyle from "../../Style/loaderStyle.style";
 import { View, ActivityIndicator } from "react-native";
 
 function Loader() {
