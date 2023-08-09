@@ -2,13 +2,14 @@ import homeStyle from "../Style/homeStyle.style";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import MapView from "react-native-maps";
 import { Text, View } from "react-native";
-import MenuNav from "../Component/MenuNav";
+import MenuNav from "../Component/Layout/MenuNav";
 
 function Home() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={homeStyle.container}>
         <MapView
+          showsCompass={false}
           style={homeStyle.map}
           initialRegion={{
             latitude: 37.78825,

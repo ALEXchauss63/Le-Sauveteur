@@ -1,9 +1,9 @@
 import { TouchableOpacity, View, Image } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import menuNavStyle from "../Style/menuNavStyle.style";
-import BtnConnextion from "../assets/button_connexion.png";
-import SoSBtn from "../assets/button_sos.png";
-import HistoryBtn from "../assets/button_history.png";
+import menuNavStyle from "../../Style/menuNavStyle.style";
+import BtnConnextion from "../../assets/button_connexion.png";
+import SoSBtn from "../../assets/button_sos.png";
+import HistoryBtn from "../../assets/button_history.png";
 
 function MenuNav() {
   const nav = useNavigation();
@@ -23,7 +23,7 @@ function MenuNav() {
       </TouchableOpacity>
 
       <TouchableOpacity>
-        <Image source={SoSBtn} />
+        <Image source={SoSBtn} style={menuNavStyle.sos} />
       </TouchableOpacity>
 
       <TouchableOpacity onPress={navHistory}>
