@@ -4,13 +4,13 @@ const menuNavStyle = StyleSheet.create({
   container: {
     zIndex: 1,
     flexDirection: "row",
-    alignItems: "center",
     position: "absolute",
-    bottom: 10,
-    left: 30,
+    bottom: 25,
+    left: 45,
   },
   sos: {
-    marginHorizontal: 15,
+    marginHorizontal: 25,
+    bottom: 100,
   },
 });
 export default menuNavStyle;

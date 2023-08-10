@@ -1,6 +1,9 @@
 import { View, Text, ScrollView } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import profilStyle from "../Style/profilStyle.style";
+import HistoryBtnOff from "../assets/button_history_off.png";
+import SosSmallbtn from "../assets/button_sos_small.png";
+import ConnexionBtn from "../assets/button_connexion.png";
 import Header from "../Component/Layout/Header";
 import Title from "../Component/Layout/Title";
 import MenuNav from "../Component/Layout/MenuNav";
@@ -17,7 +20,12 @@ function Profil() {
           <UrgenceCard />
         </ScrollView>
       </SafeAreaView>
-      <MenuNav />
+      <MenuNav
+        connexion={ConnexionBtn}
+        sos={SosSmallbtn}
+        history={HistoryBtnOff}
+        stylebtn={profilStyle.bar}
+      />
       <View style={profilStyle.footer}></View>
     </SafeAreaProvider>
   );

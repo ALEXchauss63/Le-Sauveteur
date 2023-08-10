@@ -1,19 +1,11 @@
 import { StyleSheet } from "react-native";
-import { backgroundColor, primaryColor } from "../Style/utils/color";
+import { primaryColor, backgroundColor } from "./utils/color";
 
-const profilStyle = StyleSheet.create({
+const connexionStyle = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 20,
     backgroundColor: backgroundColor,
-  },
-  content: {
-    flex: 3,
-    marginHorizontal: 15,
-  },
-  txt: {
-    color: primaryColor,
-    fontWeight: "bold",
   },
   footer: {
     width: "100%",
@@ -24,5 +16,4 @@ const profilStyle = StyleSheet.create({
     bottom: 0,
   },
 });
-
-export default profilStyle;
+export default connexionStyle;

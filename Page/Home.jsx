@@ -3,6 +3,9 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import MapView from "react-native-maps";
 import { Text, View } from "react-native";
 import MenuNav from "../Component/Layout/MenuNav";
+import ConnexionBtn from "../assets/button_connexion.png";
+import SosBtn from "../assets/button_sos.png";
+import HistoryBtn from "../assets/button_history.png";
 
 function Home() {
   return (
@@ -23,7 +26,12 @@ function Home() {
         <View style={{ flex: 4 }}>
           <Text>Bouton</Text>
         </View>
-        <MenuNav />
+        <MenuNav
+          connexion={ConnexionBtn}
+          sos={SosBtn}
+          history={HistoryBtn}
+          styleContainer={homeStyle.menu}
+        />
       </SafeAreaView>
     </SafeAreaProvider>
   );

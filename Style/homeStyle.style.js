@@ -12,5 +12,9 @@ const homeStyle = StyleSheet.create({
   txt: {
     zIndex: 1,
   },
+  menu: {
+    left: 25,
+    bottom: 0,
+  },
 });
 export default homeStyle;
