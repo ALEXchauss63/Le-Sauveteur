@@ -1,11 +1,14 @@
 import { StyleSheet } from "react-native";
-import { primaryColor, backgroundColor, darkprimaryColor } from "./utils/color";
+import { primaryColor, darkprimaryColor, backgroundColor } from "./utils/color";
 
-const connexionStyle = StyleSheet.create({
+const inscriptionStyle = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 20,
     backgroundColor: backgroundColor,
+  },
+  content: {
+    alignItems: "center",
   },
   footer: {
     width: "100%",
@@ -15,20 +18,20 @@ const connexionStyle = StyleSheet.create({
   bar: {
     bottom: 0,
   },
-  btn: {
-    marginTop: 250,
-    flex: 1,
-    alignItems: "center",
+  form: {
+    justifyContent: "space-between",
+    marginVertical: 10,
   },
-  createBtn: {
+  coBtn: {
     borderWidth: 4,
     borderColor: darkprimaryColor,
     backgroundColor: primaryColor,
     width: 318,
     height: 45,
-    borderTopLeftRadius: 7.5,
-    borderTopEndRadius: 22.5,
-    borderBottomRightRadius: 7.5,
+    borderTopEndRadius: 7.5,
+    borderBottomLeftRadius: 7.5,
+    borderTopLeftRadius: 22.5,
+    marginVertical: 20,
   },
   txt: {
     textAlign: "center",
@@ -36,4 +39,4 @@ const connexionStyle = StyleSheet.create({
     color: "white",
   },
 });
-export default connexionStyle;
+export default inscriptionStyle;
