@@ -7,7 +7,7 @@ function ConnexionForm() {
   const [email, setEmail] = useState();
   const [mdp, setMdp] = useState();
 
-  let newUser = {};
+  let user = {};
   let regMail = new RegExp(
     "[a-z0-9\\-_]+[a-z0-9\\.\\-_]*@[a-z0-9\\-_]{2,}\\.[a-z\\.\\-_]+[a-z\\-_]+"
   );
@@ -32,11 +32,11 @@ function ConnexionForm() {
         "Votre mot de passe doit comporter : 8 caractères dont au moins une minuscule, une majuscule et un chiffre"
       );
     } else {
-      newUser = {
+      user = {
         mail: email,
         password: mdp,
       };
-      setLogIn(newUser);
+      setLogIn(user);
     }
   }
   console.log(logIn);
