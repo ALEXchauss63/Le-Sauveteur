@@ -30,8 +30,10 @@ app.use((req, res, next) => {
   next();
 });
 
+const userRoutes = require("./Routes/rUser");
 const urgenceRoutes = require("./Routes/rUrgence");
 
 app.use("/api/urgence", urgenceRoutes);
+app.use("/api/auth", userRoutes);
 
 module.exports = app;

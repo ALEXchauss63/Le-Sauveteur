@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const UrgenceControl = require("../Controllers/cUrgence");
-const auth = require("../middleware/auth");
+const auth = require("../Middleware/auth");
 
 router.get("/", auth, UrgenceControl.getAllUrgence);
 router.post("/", auth, UrgenceControl.createUrgence);

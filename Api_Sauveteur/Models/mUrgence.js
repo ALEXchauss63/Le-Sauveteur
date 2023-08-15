@@ -15,4 +15,4 @@ const urgenceSchema = mongoose.Schema({
     blessureArmeBlanche : {type : Boolean}
     */
 });
-module.exports = mongoose("Urgence", urgenceSchema);
+module.exports = mongoose.model("Urgence", urgenceSchema);
