@@ -12,6 +12,16 @@ const homeStyle = StyleSheet.create({
   txt: {
     zIndex: 1,
   },
+  miniMap: {
+    flexDirection: "row",
+    justifyContent: "flex-end",
+  },
+  miniMap_icon: {
+    width: 52,
+    height: 45,
+    marginRight: 15,
+    marginTop: 10,
+  },
   menu: {
     left: 25,
     bottom: 0,
